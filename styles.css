@@ -153,8 +153,8 @@ a {
 }
 
 .navbar__logo img {
-  width: 84px;
-  height: 36px;
+  width: auto;
+  height: 22px;
 }
 
 .navbar__links {
