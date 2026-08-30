@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Roboto:wght@400;500&family=Manrope:wght@600&display=swap');
 
 :root {
   --color-white: #ffffff;
@@ -114,6 +114,12 @@ a {
   color: var(--color-white);
 }
 
+.btn--light {
+  background: var(--color-white);
+  border-color: var(--color-white);
+  color: var(--color-neutral-darkest);
+}
+
 .link-arrow {
   display: inline-flex;
   align-items: center;
@@ -174,21 +180,29 @@ a {
   min-width: 0;
   display: flex;
   justify-content: flex-end;
+  gap: 8px;
 }
 
-.navbar__actions .btn {
-  padding: 8px 20px;
+.navbar__icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--opacity-neutral-darkest-15);
+  border-radius: var(--radius-small);
+  flex-shrink: 0;
 }
 
 /* Hero */
 .hero {
   position: relative;
-  height: 900px;
+  height: 780px;
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  padding: 0 var(--page-padding);
+  padding: 80px var(--page-padding) 0;
   overflow: hidden;
 }
 
@@ -212,28 +226,45 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 32px;
+  gap: 28px;
   max-width: 768px;
   text-align: center;
   color: var(--color-white);
 }
 
+.hero__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
 .hero__title {
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: var(--heading-1);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 48px;
   line-height: 1.2;
-  letter-spacing: -0.72px;
+  width: 100%;
 }
 
 .hero__subtitle {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
   font-size: var(--text-medium);
-  line-height: 1.5;
+  line-height: 1.2;
+  text-decoration: underline;
+  width: 100%;
 }
 
 .hero__actions {
   display: flex;
   gap: 16px;
+}
+
+.hero__actions .btn {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
 }
 
 /* Sections */
